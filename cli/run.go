@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/ipfs/go-ipfs-cmdkit"
-	cmds "github.com/ipfs/go-ipfs-cmds"
+	cmds "github.com/TRON-US/go-btfs-cmds"
 )
 
 // ExitError is the error used when a specific exit code needs to be returned.

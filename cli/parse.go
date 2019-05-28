@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ipfs/go-ipfs-cmds"
+	"github.com/TRON-US/go-btfs-cmds"
 
 	osh "github.com/Kubuxu/go-os-helper"
 	"github.com/ipfs/go-ipfs-cmdkit"
@@ -19,11 +19,11 @@ import (
 )
 
 var log = logging.Logger("cmds/cli")
-var msgStdinInfo = "ipfs: Reading from %s; send Ctrl-d to stop."
+var msgStdinInfo = "btfs: Reading from %s; send Ctrl-d to stop."
 
 func init() {
 	if osh.IsWindows() {
-		msgStdinInfo = "ipfs: Reading from %s; send Ctrl-z to stop."
+		msgStdinInfo = "btfs: Reading from %s; send Ctrl-z to stop."
 	}
 }
 

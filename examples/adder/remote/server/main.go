@@ -4,9 +4,9 @@ import (
 	"context"
 	nethttp "net/http"
 
-	"github.com/ipfs/go-ipfs-cmds/examples/adder"
+	"github.com/TRON-US/go-btfs-cmds/examples/adder"
 
-	http "github.com/ipfs/go-ipfs-cmds/http"
+	http "github.com/TRON-US/go-btfs-cmds/http"
 )
 
 type env struct{}
