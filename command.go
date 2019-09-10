@@ -53,6 +53,7 @@ type Command struct {
 	// If the global CLI --timeout is set, this timeout is overridden by
 	// the --timeout value.
 	RunTimeout time.Duration
+	HTTPOnly   bool
 
 	// External denotes that a command is actually an external binary.
 	// fewer checks and validations will be performed on such commands.

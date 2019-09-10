@@ -33,6 +33,10 @@ func Run(ctx context.Context, root *cmds.Command,
 
 	req, errParse := Parse(ctx, cmdline[1:], stdin, root)
 
+	if req.Command.HTTPOnly {
+		return fmt.Errorf("HTTP command ONLY, can't be accessed from cli")
+	}
+
 	// Handle the timeout up front.
 	var cancel func()
 	if timeoutStr, ok := req.Options[cmds.TimeoutOpt]; ok {
